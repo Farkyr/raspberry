@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Raspberry Pi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="change-lum">
+    <nav class="col-12 navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Accueil</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Game 1<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Game 2<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Game 3<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Game 4<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Game 5<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container col-12">
+        <div class="row">
+            <div>
+                <a class="btn-1 col-md-4 offset-md-4 " href="/led/on/red"><span>On Rouge</span></a>
+                <a class="btn-2 col-md-4 offset-md-4" href="/led/off/red"><span>Off Rouge</span></a>
+                <a class="btn-3 col-md-4 offset-md-4" href="/led/on/blue"><span>On Bleu</span></a>
+                <a class="btn-4 col-md-4 offset-md-4" href="/led/off/blue"><span>Off Bleu</span></a>
+                <a class="btn-5 col-md-4 offset-md-4 " href="/led/blink/red"><span>Clignottement Rouge</span></a>
+                <a class="btn-6 col-md-4 offset-md-4" href="/led/blink/blue"><span>Clignottement Bleu</span></a>
+                <div class="col-md-4  value-lum offset-md-4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Game 1  -->
+
+    
+    <div class="container game-1 col-12">
+        <div class="row">
+            <div class="col-4">
+                <h2 class="change-lum-color">Game 1</h2>
+                <p class="change-lum-color">Réaliser le schéma d'allumage des lumières selon un ordre prédéfini</p>
+                <a class="btn-4 col-3 " href="/led/off/blue"><span>4</span></a>
+                <a class="btn-5 col-3 " href="/led/blink/red"><span>6</span></a>
+                <a class="btn-1 col-3  " href="/led/on/red"><span>1</span></a>
+                <a class="btn-2 col-3 " href="/led/off/red"><span>3</span></a>
+                <a class="btn-6 col-3 " href="/led/blink/blue"><span>5</span></a>
+                <a class="btn-3 col-3 " href="/led/on/blue"><span>2</span></a>
+            </div>
+            <div class="col-4 offset-3 schema">
+                <h2 class="change-lum-color" >Game 1</h2>
+                <p class="change-lum-color">Schéma de réalisation demmandé</p>
+                <a class="btn-1 col-3  " href="/led/schema"><span>1</span></a>
+                <a class="btn-1 col-3  " href="/led/schema2"><span>1</span></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'PT Sans', sans-serif;
+  width: 100%;
+  background-image: url(https://images.wallpaperscraft.com/image/deer_minimalism_vector_background_nature_93845_1920x1080.jpg);
+  background-repeat:no-repeat;
+}
+.container{
+  vertical-align: middle;
+  text-align: center;
+  height: 45vh;
+}
+.value-lum{
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.897);
+  border-radius: 0;
+  padding: 15px 80px 15px;
+  transition: all 0.7s ease-out;
+  background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  text-decoration: none;
+  margin: 0.625rem;
+  border: none;
+  border: 1px solid rgba(223,190,106,0.3);
+}
+.container a{
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.897);
+  border-radius: 0;
+  padding: 9px 40px 10px;
+  transition: all 0.7s ease-out;
+  background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  text-decoration: none;
+  margin: 0.625rem;
+  border: none;
+  border: 1px solid rgba(223,190,106,0.3);
+}
+.container a:hover{
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.897);
+  border-radius: 0;
+  padding: 18px 80px 20px;
+  transition: all 0.7s ease-out;
+  background-image: linear-gradient(to right, #9AC64B 0%, #bd9529 51%, rgb(200, 148, 43) 100%);
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  text-decoration: none;
+  margin: 0.625rem;
+  border: none;
+  border: 1px solid rgba(223,190,106,0.3);
+}
+.container span{
+  display: block;
+}
+.container a::before, .container a::after{
+  content:"";
+  width: 0;
+  height: 4px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: rgb(255, 255, 255);
+}
+
+span::before, span::after{
+  content:"";
+  width:4px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: rgb(255, 255, 255);
+}
+.container a:hover::before, .container a:hover::after{
+  width: 100%;
+}
+.container a:hover span::before, .container a:hover span::after{
+  height: 100%;
+}
+/*----- a 1 -----*/
+.btn-1::before, .btn-1::after{
+  transition-delay: 0.2s;
+}
+.btn-1 span::before, .btn-1 span::after{
+  transition-delay: 0s;
+}
+.btn-1::before{
+  right: 0;
+  top: 0;
+}
+.btn-1::after{
+  left: 0;
+  bottom: 0;
+}
+.btn-1 span::before{
+  left: 0;
+  top: 0;
+}
+.btn-1 span::after{
+  right: 0;
+  bottom: 0;
+}
+.btn-1:hover::before, .btn-1:hover::after{
+  transition-delay: 0s;
+}
+.btn-1:hover span::before, .btn-1:hover span::after{
+  transition-delay: 0.2s;
+}
+
+/*--- a 2 -------*/
+
+
+.btn-2::before, .btn-2::after{
+  transition-delay: 0s;
+}
+.btn-2 span::before, .btn-2 span::after{
+  transition-delay: 0.2s;
+}
+.btn-2::before{
+  right: 0;
+  top: 0;
+}
+.btn-2::after{
+  left: 0;
+  bottom: 0;
+}
+.btn-2 span::before{
+  left: 0;
+  top: 0;
+}
+.btn-2 span::after{
+  right: 0;
+  bottom: 0;
+}
+.btn-2:hover::before, .btn-2:hover::after{
+  transition-delay: 0.2s;
+}
+.btn-2:hover span::before, .btn-2:hover span::after{
+  transition-delay: 0s;
+}
+
+
+/*----- a 3 -----*/
+.btn-3::after{
+  left: 0;
+  bottom: 0;
+  transition-delay: 0.6s;
+}
+.btn-3 span::after{
+  transition-delay: 0.4s;
+  right: 0;
+  bottom: 0
+}
+.btn-3::before{
+  right: 0;
+  top: 0;
+  transition-delay: 0.2s;
+}
+.btn-3 span::before{
+  transition-delay: 0s;
+  left: 0;
+  top: 0;
+}
+
+.btn-3:hover::after{
+  transition-delay: 0s;
+}
+.btn-3:hover span::after{
+  transition-delay: 0.2s;
+}
+.btn-3:hover::before{
+  transition-delay: 0.4s;
+}
+.btn-3:hover span::before{
+  transition-delay: 0.6s;
+}
+
+/*----- a 4 -----*/
+.btn-4::after{
+  right:0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.btn-4 span::after{
+  right:0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.btn-4::before{
+  left: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.btn-4 span::before{
+  left: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+
+/*----- a 5 -----*/
+.btn-5::after{
+  left:0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.btn-5 span::after{
+  right:0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.btn-5::before{
+  right: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.btn-5 span::before{
+  left: 0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+
+/*----- a 6 -----*/
+.btn-6::before{
+  left: 50%;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.btn-6::after{
+  left: 50%;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.btn-6 span::before{
+  left: 0;
+  top: 50%;
+  transition-duration: 0.4s;
+}
+.btn-6 span::after{
+  right: 0;
+  top: 50%;
+  transition-duration: 0.4s;
+}
+.btn-6:hover::before, .btn-6:hover::after{
+  left: 0;
+}
+.btn-6:hover span::before, .btn-6:hover span::after{
+  top: 0;
+}
+
+
+
+/*---------- NAV BAR --------------*/
+.navbar{
+  background-color: #0C5866;
+  color: white;
+}
+.navbar-light .navbar-brand {
+  color: rgb(255, 255, 255);
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.945);
+}
+
+.navbar-brand:focus,.navbar-brand:hover {
+  color: rgba(206, 206, 206, 0.924);
+}
+.navbar-link:focus, .navbar-link:hover {
+  color: rgba(221, 220, 220, 0.924);
+}
+
+
+/* Container pour le Jeu 1 !    */
+h2{
+  color: #0C5866;
+}
+p{
+  color: #0C5866;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+.game-1 a{
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.897);
+  border-radius: 0;
+  padding: 3px;
+  transition: all 0.7s ease-out;
+  background-image: linear-gradient(to right, rgb(88, 128, 15) 0%, #b18714 51%, rgb(187, 130, 16) 100%);
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  text-decoration: none;
+  margin: 0.625rem;
+  border: none;
+  border: 1px solid rgba(223,190,106,0.3);
+  width: 100px;
+  height: 100px;
+}
+.game-1 a:hover{
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.897);
+  border-radius: 0;
+  padding: 3px;
+  transition: all 0.7s ease-out;
+  background-image: linear-gradient(to right, rgb(88, 128, 15) 0%, #b18714 51%, rgb(187, 130, 16) 100%);
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  text-decoration: none;
+  margin: 0.625rem;
+  border: 1px solid rgba(223,190,106,0.3);
+  width: 100px;
+  height: 100px;
+}
+
+
+.game-1 .schema a {
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.897);
+  border-radius: 0;
+  padding: 3px;
+  transition: all 0.7s ease-out;
+  background-image: linear-gradient(to right, rgb(119, 33, 33) 0%, #d10c0c 51%, rgb(185, 11, 11) 100%);
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  text-decoration: none;
+  margin: 0.625rem;
+  border: none;
+  border: 1px solid rgba(223,190,106,0.3);
+  width: 100px;
+  height: 100px;
+}
+.game-1 .schema a:hover{
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.897);
+  border-radius: 0;
+  padding: 3px;
+  transition: all 0.7s ease-out;
+  background-image: linear-gradient(to right, rgb(119, 33, 33) 0%, #d10c0c 51%, rgb(185, 11, 11) 100%);
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  text-decoration: none;
+  margin: 0.625rem;
+  border: 1px solid rgba(223,190,106,0.3);
+  width: 100px;
+  height: 100px;
+}
